@@ -1,4 +1,4 @@
-import { gray } from "@radix-ui/colors";
+import { gray, orange } from "@radix-ui/colors";
 import { ImageResponse } from "next/og";
 
 export const size = {
@@ -24,7 +24,7 @@ export default function Icon() {
       >
         <div
           style={{
-            background: gray.gray12,
+            background: orange.orange10,
             width: "100%",
             height: "100%",
             display: "flex",
