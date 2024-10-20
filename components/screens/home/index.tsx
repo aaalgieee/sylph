@@ -1,6 +1,7 @@
 import { Footer } from "@/components/footer";
 import * as FadeIn from "@/components/motion/staggers/fade";
 import { Posts } from "@/components/posts";
+import { Analytics } from "@vercel/analytics/react"
 
 const Spacer = () => <div style={{ marginTop: "24px" }} />;
 
@@ -18,10 +19,17 @@ export default function Home() {
       <Spacer />
       <FadeIn.Item>
         <p>
-        I'm <a href="https://linkedin.com/in/aaalgieee" target="blank"><u>Gab</u></a> a Software Developer in Davao City. 
-        Also, has the passion to make change in local tech community and a master of mental disguise. 
-        I like anything minimal modern design, dogs, cars, and cinematography. 
-        Now, diving world of iOS Developement using SwiftUI. <br/>I'm also one of the seven Founders & Events Lead of <a href="https://dicedvo.org" target="blank"><u>Davao Interschool Computer Enthusiats (DICE)</u></a>.
+          I'm{" "}
+          <a href="https://linkedin.com/in/aaalgieee" target="blank">
+            <u>Gab</u>
+          </a>{" "}
+          a Software Developer in Davao City. Also, has the passion to make change in local tech community and a master of mental disguise. I like anything
+          minimal modern design, dogs, cars, and cinematography. Now, diving world of iOS Developement using SwiftUI. <br />
+          I'm also one of the seven Founders & Events Lead of{" "}
+          <a href="https://dicedvo.org" target="blank">
+            <u>Davao Interschool Computer Enthusiats (DICE)</u>
+          </a>
+          .
         </p>
       </FadeIn.Item>
       <FadeIn.Item>
@@ -34,6 +42,7 @@ export default function Home() {
       <FadeIn.Item>
         <Footer />
       </FadeIn.Item>
+      <Analytics />
     </FadeIn.Container>
   );
 }
