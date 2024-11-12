@@ -1,5 +1,5 @@
 import "@/styles/main.css";
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from "next";
 
 import { Providers } from "@/components/providers";
@@ -30,6 +30,7 @@ export default function RootLayout({
             <article className="article">{children}</article>
           </main>
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
